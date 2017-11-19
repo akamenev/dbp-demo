@@ -36,5 +36,9 @@ kubectl apply -f deployments/dbp-demo.yaml
 
 ## Add ACI Connector to Kuberenetes
 
+```
 kubectl apply -f aci-connector/aci.yaml
+```
+```
 kubectl apply -f deployments/dbp-demo-aci.yaml
+```
