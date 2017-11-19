@@ -27,10 +27,14 @@ az acs kubernetes browse --name dbp-demo-kube --resource-group dbp-demo-kube
 
 ## Deploy to Kubernetes
 
-
-```
-kubectl apply -f deployments/dbp-demo.yaml
-```
 ```
 kubectl apply -f services/dbp-demo.yaml
 ```
+```
+kubectl apply -f deployments/dbp-demo.yaml
+```
+
+## Add ACI Connector to Kuberenetes
+
+kubectl apply -f aci-connector/aci.yaml
+kubectl apply -f deployments/dbp-demo-aci.yaml

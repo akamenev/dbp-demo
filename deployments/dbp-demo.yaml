@@ -5,7 +5,7 @@ metadata:
     app: dbp-demo
   name: dbp-demo
 spec:
-  replicas: 1
+  replicas: 4
   template:
     metadata:
       labels:
@@ -17,10 +17,3 @@ spec:
           ports:
             - containerPort: 5000
               protocol: TCP
-          resources:
-            limits:
-              cpu: 1000m
-              memory: 512Mi
-            requests:
-              cpu: 500m
-              memory: 256Mi
