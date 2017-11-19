@@ -1,0 +1,25 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: dbp-demo
+  name: dbp-demo
+spec:
+  template:
+    metadata:
+      labels:
+        app: dbp-demo
+    spec:
+      containers:
+        - name: dbp-demo
+          image: dbpdemo.azurecr.io/dbp-demo:v1.0
+          ports:
+            - containerPort: 5000
+              protocol: TCP
+          resources:
+            limits:
+              cpu: 1000m
+              memory: 512Mi
+            requests:
+              cpu: 500m
+              memory: 256Mi
