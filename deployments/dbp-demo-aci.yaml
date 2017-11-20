@@ -14,4 +14,4 @@ spec:
       containers:
         - name: dbp-demo-aci
           image: avknsk/dbp-demo-aci
-      nodeName: aci-connector    
+      nodeName: aci-connector
