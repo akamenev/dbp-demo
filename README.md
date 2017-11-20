@@ -47,5 +47,3 @@ kubectl apply -f deployments/dbp-demo-aci.yaml
 ```
 while true; do curl -s $ip_address/version --max-time 1 | egrep --color -i '2.0.0|$'; sleep .2; done
 ```
-
-## Service Fabric
