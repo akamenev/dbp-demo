@@ -1,5 +1,5 @@
 FROM ubuntu:17.04
-MAINTAINER Kelsey Hightower "kelsey.hightower@gmail.com"
+MAINTAINER Andrei Kamenev "ankamene@microsoft.com"
 RUN apt-get update -y && \
     apt-get install -y python3-pip python3-dev
 COPY requirements.txt /app/requirements.txt
