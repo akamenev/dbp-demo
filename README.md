@@ -38,3 +38,11 @@ kubectl apply -f deployments/dbp-demo.yaml
 ```
 while true; do curl -s $ip_address/version --max-time 1 | egrep --color -i '2.0.0|$'; sleep .2; done
 ```
+
+## Deploy voting app
+```
+kubectl apply -f services/voting-app.yaml
+```
+```
+kubectl apply -f deployments/voting-app.yaml
+```
