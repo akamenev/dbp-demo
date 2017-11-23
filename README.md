@@ -34,15 +34,6 @@ kubectl apply -f services/dbp-demo.yaml
 kubectl apply -f deployments/dbp-demo.yaml
 ```
 
-## Add ACI Connector to Kuberenetes and deploy app on it
-
-```
-kubectl apply -f aci-connector/aci.yaml
-```
-```
-kubectl apply -f deployments/dbp-demo-aci.yaml
-```
-
 ## Rolling upgrade
 ```
 while true; do curl -s $ip_address/version --max-time 1 | egrep --color -i '2.0.0|$'; sleep .2; done
