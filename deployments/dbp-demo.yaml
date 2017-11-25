@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: dbp-demo
-          image: dbpdemo.azurecr.io/dbp-demo:v1.0
+          image: dbpdemo.azurecr.io/dbp-demo:v1.1
           ports:
             - containerPort: 5000
               protocol: TCP
