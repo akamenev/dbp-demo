@@ -7,7 +7,7 @@ docker build -t dbpdemo.azurecr.io/dbp-demo:v1.0 .
 ```
 ```
 docker login dbpdemo.azurecr.io
-az acr login --name dbp-demo
+az acr login --name dbpdemo
 ```
 ```
 docker push dbpdemo.azurecr.io/dbp-demo:v1.0
