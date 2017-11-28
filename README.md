@@ -5,6 +5,7 @@ Demo setup for the Microsoft Digital Business Platform talk
 ```
 docker build -t dbpdemo.azurecr.io/dbp-demo:v1.1 .
 ```
+![gif](https://raw.githubusercontent.com/akamenev/dbp-demo/master/gifs/dbuild.gif)
 ```
 docker login dbpdemo.azurecr.io
 az acr login --name dbpdemo
@@ -12,6 +13,7 @@ az acr login --name dbpdemo
 ```
 docker push dbpdemo.azurecr.io/dbp-demo:v1.1
 ```
+![gif](https://raw.githubusercontent.com/akamenev/dbp-demo/master/gifs/dpush.gif)
 
 ## Kubernetes on Azure demo
 
